@@ -24,8 +24,14 @@ public class DemoApplication {
 			userRepository.save(user);
 
 			// Fetch user by username
-			User fetchedUser = userRepository.findByUsername("DEAN_ARSD");
-
+			// User fetchedUser = userRepository.findByUsername("DEAN_ARSD");
+			User fetchedUser = userRepository.findByUsername("DEAN_ARSD").orElse(null);
+			if (fetchedUser != null) {
+				System.out.println("User fetched from DB: " + fetchedUser.getUsername() + ", Role: " + fetchedUser.getRole());
+			} else {
+				System.out.println("User not found!");
+			}
+			
 			// Print to console
 			if (fetchedUser != null) {
 				System.out.println("User fetched from DB: " + fetchedUser.getUsername() + ", Role: " + fetchedUser.getRole());
