@@ -55,3 +55,14 @@ public class HelloController {
     }
 }
 ```
+
+### 🔐 Testing Signup & Login with Postman
+
+#### Signup
+- **POST** `/auth/signup`
+- **Body (JSON):**
+```json
+{
+  "username": "testuser",
+  "password": "testpass"
+}
