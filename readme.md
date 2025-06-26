@@ -66,3 +66,52 @@ public class HelloController {
   "username": "testuser",
   "password": "testpass"
 }
+
+
+# Folder Structur:
+├───.vscode
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   └───com
+│   │   │       └───example
+│   │   │           └───pfms
+│   │   │               ├───controller
+│   │   │               ├───dto
+│   │   │               ├───model
+│   │   │               ├───repository
+│   │   │               └───security
+│   │   └───resources
+│   │       ├───static
+│   │       └───templates
+│   └───test
+│       └───java
+│           └───com
+│               └───example
+│                   └───demo
+└───target
+    ├───classes
+    │   └───com
+    │       └───example
+    │           └───pfms
+    │               ├───controller
+    │               ├───dto
+    │               ├───model
+    │               ├───repository
+    │               └───security
+    ├───generated-sources
+    │   └───annotations
+    ├───generated-test-sources
+    │   └───test-annotations
+    ├───maven-archiver
+    ├───maven-status
+    │   └───maven-compiler-plugin
+    │       ├───compile
+    │       │   └───default-compile
+    │       └───testCompile
+    │           └───default-testCompile
+    ├───surefire-reports
+    └───test-classes
+        └───com
+            └───example
+                └───demo
