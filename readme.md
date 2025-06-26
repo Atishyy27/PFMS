@@ -69,6 +69,8 @@ public class HelloController {
 ```
 
 # Folder Structur:
+
+```
 ├───.vscode
 ├───src
 │   ├───main
@@ -115,3 +117,4 @@ public class HelloController {
         └───com
             └───example
                 └───demo
+```
